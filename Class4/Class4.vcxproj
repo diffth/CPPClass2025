@@ -130,6 +130,7 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Class_0421_OOP.cpp" />
     <ClCompile Include="Class_0422.cpp" />
+    <ClCompile Include="Class_0424.cpp" />
     <ClCompile Include="Sedan.cpp" />
     <ClCompile Include="Suv.cpp" />
   </ItemGroup>

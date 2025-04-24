@@ -15,9 +15,14 @@ public:
 		cout << gas << endl;
 		//cout << weight << endl;
 	}
-	void Break()
+	virtual void Break()
 	{
+		__super::Break();
 		cout << "Suv class Break 함수 호출" << endl;
+	}
+	virtual void Bell()
+	{
+		cout << "Suv 벨을 눌러라 호출" << endl;
 	}
 };
 

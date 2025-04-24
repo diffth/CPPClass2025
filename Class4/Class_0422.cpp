@@ -1,8 +1,8 @@
 #include "Sedan.h"
 #include "Suv.h"
 
-int main()
-{
+//int main()
+//{
 	//Sedan mySedan;
 	//mySedan.Break();
 	//mySedan.GasFull(45);
@@ -37,11 +37,11 @@ int main()
 	//Suv* ptr_suv = (Suv*)ptr_myCar;
 	//cout << ptr_suv->newdata << endl;
 
-	Car myCar;
-	Suv mySuv;
-	Car* car_ptr = &mySuv;
-	//dynamic_cas<변환타임>(변환대상);
-	Suv* suv_ptr = dynamic_cast<Suv*>(car_ptr);
-	cout << suv_ptr->newdata << endl;
+	//Car myCar;
+	//Suv mySuv;
+	//Car* car_ptr = &mySuv;
+	//dynamic_cast<변환타임>(변환대상);
+	//Suv* suv_ptr = dynamic_cast<Suv*>(car_ptr);
+	//cout << suv_ptr->newdata << endl;
 
-}
+//}

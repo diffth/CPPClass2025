@@ -6,20 +6,20 @@ Car::Car()
 	//객체를 생성할 때 호출해주는 함수
 	//생성자에서도 초기화 가능
 	//반환자료형 생략
-	cout << weight << endl;
-	cout << "default constructor 호출" << endl;
-
+	//cout << weight << endl;
+	cout << "Car default constructor 호출" << endl;
+	++countCar;
 }
 
 Car::Car(float g, int m)
 {
-	cout << "gas " << gas << endl;
-	cout << "max " << max << endl;
-	gas = g;
-	max = m;
-	cout << "gas " << gas << endl;
-	cout << "max " << max << endl;
-	cout << "constructor 매개변수 float, int 호출" << endl; 
+	//cout << "gas " << gas << endl;
+	//cout << "max " << max << endl;
+	//gas = g;
+	//max = m;
+	//cout << "gas " << gas << endl;
+	//cout << "max " << max << endl;
+	//cout << "constructor 매개변수 float, int 호출" << endl; 
 }
 
 Car::~Car()

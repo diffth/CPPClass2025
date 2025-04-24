@@ -25,5 +25,9 @@ public:
 	{
 		cout << "Sedan의 SedanFunction 호출" << endl;
 	}
+	virtual void Bell()
+	{
+		cout << "Sedan 벨을 눌러라 호출" << endl;
+	}
 };
 

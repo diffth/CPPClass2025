@@ -11,7 +11,9 @@ class Car
 public:
 	//멤버변수 정의/초기화
 	string name = "SONATA";
-	int max = 4;
+	const int max = 4;
+	//정적 멤버변수 초기화x
+	static int countCar;
 
 protected:
 	float gas = 100;
@@ -27,9 +29,19 @@ public:
 		name = i_name;
 		cout << name << "... 생성됨..." << endl;
 	}
+	//Car(int max_t)
+	Car(int max_t) : max(max_t)
+	{
+		cout << "max : " << max << endl;
+	}
 	Car(float gas, int max);
 	Car(float i_weight, float i_gas, int i_max):weight(i_weight), gas(i_gas), max(i_max)
 	{
+		/*
+		this->weight = weight;
+		this->gas = gas;
+		this->max = max;
+		*/
 		//weight = i_weight;
 		//gas = i_gas;
 		//max = i_max;
@@ -41,8 +53,14 @@ public:
 		cout << name << " : " << i_name << endl;
 		cout << "매개변수 4 초기화 생성자 호출" << endl;
 	}
-	virtual ~Car();	//소멸자
-	void Break();
+	~Car();	//소멸자
+	virtual void Break();
+
+	//순수가상함수 > x
+	virtual void Bell() {
+
+	};
+
 	void Run();
 	int GetMax();
 	void GasFull(int);
