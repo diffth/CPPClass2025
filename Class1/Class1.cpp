@@ -123,6 +123,22 @@
 //                  //Suv* ptr_suv = (Suv*)ptr_car;
 //                  //dynamic_cast<변환타입>(변환대상);
 //                  Suv* ptr_suv = dynamic_cast<Suv*>(car_ptr);
+//      가상함수
+//          자식클래스의 멤버함수가 재정의 할 것이라고 부모클래스에 선언
+//          virtual 멤버함수
+//          __super::멤버함수; //오버라이딩후 부모의 함수호출
+//      순수가상함수
+//          자식클래스의 멤버함수가 정의되어야만 한다고 부모클래스에 선언.
+//          부모클래스 정의x //자식클래스에서 정의o 
+//          //virtual void Break() = 0;
+//          //virtual void Break(){ ... }
+//      추상클래스(abstract class)/인터페이스(interface)
+//          순수가상함수가 포함된 클래스
+//          추상클래스는 인터페이스(자동차인터페이스, 휴대폰인터페이스)를 제공하는 클래스
+//      this 포인터
+//          객체 자기자신을 가리키는 포인터, 변경x
+//          매개변수와 이름이 같은 멤버변수
+//          자기자신의 주소를 반환하는 함수
 // 
 //::VisualStudio
 //      debug/debugging
