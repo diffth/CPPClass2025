@@ -164,7 +164,7 @@
 //              간선(Edge)
 //              가중치(Weight)
 // 
-// ::STL 컨테이너
+//::STL 컨테이너
 //      <vector>
 //      <list>
 //      <stack>

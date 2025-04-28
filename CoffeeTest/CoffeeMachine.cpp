@@ -8,8 +8,8 @@ int main()
 {
 	if (isCoin())
 	{
-		int water = 500, cmix = 50;
-		//int water = 500, cmix = 5;
+		//int water = 500, cmix = 50;
+		int water = 500, cmix = 5;
 		//int water = 50, cmix = 50;
 		//int water = 50, cmix = 5;
 
